@@ -1,0 +1,94 @@
+{
+    "database_name": "data/quran.db",
+    "tables": [
+        {
+            "name": "Ayas",
+            "columns": [
+                {
+                    "auto_increment": true,
+                    "name": "id",
+                    "nullable": false,
+                    "primary_key": true,
+                    "printable": true,
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "aya_id",
+                    "nullable": false,
+                    "printable": true,
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "sura_id",
+                    "nullable": false,
+                    "printable": true,
+                    "type": "INTEGER"
+                },
+                {
+                    "auto_increment": false,
+                    "default": "CURRENT_TIMESTAMP",
+                    "name": "Text",
+                    "nullable": false,
+                    "primary_key": false,
+                    "printable": true,
+                    "type": "TEXT"
+                }
+            ]
+        },
+        {
+            "name": "Audios",
+            "columns": [
+                {
+                    "name": "Reciter",
+                    "type": "TEXT",
+                    "primary_key": false,
+                    "auto_increment": false,
+                    "nullable": true,
+                    "unique": false,
+                    "printable": true
+                },
+                {
+                    "name": "base_url",
+                    "type": "TEXT",
+                    "primary_key": false,
+                    "auto_increment": false,
+                    "nullable": true,
+                    "unique": false,
+                    "printable": true
+                }
+            ]
+        },
+        {
+            "name": "Audio_muhammad_husary",
+            "columns": [
+                {
+                    "name": "sura_id",
+                    "type": "INTEGER",
+                    "primary_key": true,
+                    "auto_increment": false,
+                    "nullable": false,
+                    "unique": false,
+                    "printable": true
+                },
+                {
+                    "name": "aya_id",
+                    "type": "INTEGER",
+                    "primary_key": true,
+                    "auto_increment": false,
+                    "nullable": false,
+                    "unique": false,
+                    "printable": true
+                },
+                {
+                    "name": "audio_url",
+                    "type": "TEXT",
+                    "primary_key": false,
+                    "auto_increment": false,
+                    "nullable": false,
+                    "unique": false,
+                    "printable": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[project]
+name = "quran_viewer"
+version = "0.1.0"
+description = "Quran viewer with audio playback using Clean Architecture"
+authors = ["Your Name <you@example.com>"]
+
+[project.dependencies]
+PyQt5 = "*"
+
+[tool.setuptools.packages.find]
+where = ["."]
+

@@ -1,0 +1,6 @@
+{
+  "font_size": 50,
+  "font_color": "#90ee90",       // lightgreen
+  "background_color": "#000000", // black
+  "highlight_color": "#add8e6"   // lightblue
+}
